@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Walker Blog - Services</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../html/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../html/index.html">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="../html/services.html">Services</a>
+                        <a class="nav-link" href="../html/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../html/fun.html">Fun Fact Corner</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>Dog Walking Services</h1>
+    </header>
+    <main>
+        <div>
+            <header>
+                <h2>Our services and prices</h2>
+                <p>Here you can explore our services and prices and request any service you're interested in!
+                    After receiving your request, we will process it and get in touch to plan the details.
+                </p>
+            </header>
+            <br>
+            <section>
+                <h3>Dog Walking</h3>
+                <div class="text">
+                    <p>We understand that every dog is unique and has different requirements when it comes to their daily exercise. Our experienced dog walkers will take the time to get to know your pet and create a customized walking plan that fits their individual needs. Whether your dog prefers a leisurely stroll or a more rigorous workout, we've got you covered.</p>
+                </div>
+                <div class="popover-div">
+                    <a id="popover1" tabindex="0" class="btn btn-sm btn-warning" role="button" 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="focus"
+                    data-bs-title="Title" 
+                    data-bs-content="Content"
+                    data-bs-custom-class="my-custom-popover">Click to see prices and additional details</a>
+                </div>
+
+                <h3>Pet Sitting</h3>
+                <div class="text">
+                    <p>We know how important your pets are to you, and we want to make sure they are happy and comfortable while you're away. Our pet sitters are passionate animal lovers who will provide your pets with the love and attention they deserve. We'll make sure your pets are well-fed, have plenty of fresh water, and get plenty of exercise and playtime.</p>
+                </div>
+                <div class="popover-div">
+                    <a id="popover2" tabindex="0" class="btn btn-sm btn-warning" role="button" 
+                    data-bs-toggle="popover"
+                    data-bs-trigger="focus" 
+                    data-bs-title="Title" 
+                    data-bs-content="Content"
+                    data-bs-custom-class="my-custom-popover">Click to see prices and additional details</a>
+                </div>
+
+                <h3>Puppy Care</h3>
+                <div class="text">
+                    <p>Bringing home a new puppy is an exciting time, but it can also be a lot of work. Our puppy care services are designed to help ease the burden of caring for a new puppy. We'll work with you to create a care plan that meets your puppy's needs, including feeding, potty breaks, and playtime. We'll also make sure your puppy gets plenty of socialization and training to help them become a well-behaved member of your family.</p>
+                </div>
+                <div class="popover-div">
+                    <a id="popover3" tabindex="0" class="btn btn-sm btn-warning" role="button" 
+                    data-bs-toggle="popover"
+                    data-bs-trigger="focus" 
+                    data-bs-title="Title" 
+                    data-bs-content="Content"
+                    data-bs-custom-class="my-custom-popover">Click to see prices and additional details</a>
+                </div>
+            </section>
+            <section>
+                <form class="row g-3" id="request-form">
+                    <legend>Request a service</legend>
+                    <div class="col-12">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Jane Doe"required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="email@email.com"required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="+37129292929"required>
+                        <div id="phone-error"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Street address</label>
+                        <input type="text" class="form-control" id="inputAddress" name="address" placeholder="Brivibas street 28" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" name="city" placeholder="Riga"required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputBreed" class="form-label">Dog Breed</label>
+                        <input type="text" class="form-control" id="inputBreed" placeholder="Boxer" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputDogAge" class="form-label">Dog Age</label>
+                        <input type="text" class="form-control" id="inputDogAge" name="dogAge" placeholder="4 months" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="serviceType" class="form-label">Service Type:</label>
+                        <select id="serviceType" name="service-type" class="form-select" required>
+                            <option selected="">Select a service</option>
+                            <option value="dog-walk">Dog Walk</option>
+                            <option value="pet-sitting">Pet Sitting</option>
+                            <option value="dog-training">Puppy Care</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputTime" class="form-label">Preferred Time:</label>
+                        <input type="time" id="inputTime" name="preferred-time" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDate" class="form-label">Preferred Date:</label>
+                        <input type="date" id="inputDate" name="preferred-date" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-dark" type="submit" value="Submit" onclick="createObject()">Submit request</button>
+                    </div>
+                    <div class="col-md-8" id="input-error"></div>
+                    <div class="col-md-8" id="success-alert"></div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Dog Walker Blog</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="../js/services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/* Global styles */
+
+:root {
+    --border-radius: 5px;
+}
+
+/* Navigation styles */
+
+nav {
+    border-radius: var(--border-radius);
+}
+
+nav a {
+    padding: 14px 16px;
+}
+
+.nav-link:hover {
+    background-color: #d76b00;
+    border-radius: var(--border-radius);
+}
+
+/* Header styles */
+
+header {
+    background-color: #fdb74e;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+div header {
+    background-color: #dedacb;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+header h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* Main styles */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+section h3 {
+    margin-top: 10px;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #2b3035;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+/* Component-specific styles */
+
+/* Blog content */
+.blog-content {
+    display: flex;
+}
+
+.blog-date {
+    font-size: x-small;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.text {
+    margin-right: 20px;
+    text-align: justify;
+}
+
+/* Gallery */
+.photo-table td {
+    vertical-align: middle;
+}
+
+/* Service request form */
+legend {
+    font-weight: bold;
+}
+
+form {
+    background-color: #fdddad;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+#input-error, #phone-error {
+    color: red;
+}
+
+/* Popover styling */
+.popover-div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.my-custom-popover .popover-header {
+    background-color: #fdb74e;
+}
+
+.my-custom-popover .popover-body {
+    background-color: #dedacb;
+}
+
+/* Hide older posts on index page until clicked */
+#older-posts {
+    display: none;
+}
+
+.load-more {
+    cursor: pointer;
+}
+
+/* Help display contest section under gallery only when scrolled to it */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+#contest {
+    background-color: #fdddad;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+
+#catFactsSection{
+    background-color: #dedacb;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+
+/* Hover effects */
+img:hover {
+    opacity: 0.8;
+}
